@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '* * * * *' # Draait elke 1 minuten
   workflow_dispatch:
+  repository_dispatch:
+    types: [run-scraper]  # DIT IS NIEUW: Luistert naar externe oproepen
 
 jobs:
   scrape:
