@@ -2,7 +2,7 @@ name: Koopmaat Scanner
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Draait elke 5 minuten
+    - cron: '* * * * *' # Draait elke 1 minuten
   workflow_dispatch:
 
 jobs:
